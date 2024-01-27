@@ -10,5 +10,9 @@ def checkboard_1():
 def checkboard_2(num):
     return render_template("home.html", color_1 = "black", color_2 = "red", row = num, col = 8)
 
+@app.route("/<int:x>/<int:y>")
+def checkboard_3(x,y):
+    return render_template("home.html", color_1 = "black", color_2 = "red", row = x, col = y)
+
 if __name__ == "__main__":
     app.run(debug=True)
