@@ -1,13 +1,22 @@
 * {
-    margin: 0px auto;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-}
-
-h1 {
-    text-align: center;
 }
 
 .container {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 80px;
+    height: 80px;
 }
