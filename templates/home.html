@@ -8,13 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>***Checkerboard***</h1>
+        <h1 style="background-color: {{color_1}}; color: {{color_2}}">***Checkerboard***</h1>
         <table>
             <tbody>
+                {%for i in range(0,num)%}
                 <tr>
-                    <td></td>
-                    <td></td>
+                    {%for x in range(0,num)%}
+                        {%if (i+x) % 2 ==0%}
+                    <td style="background-color: {{color_1}};"></td>
+                        {%else%}
+                    <td style="background-color: {{color_2}};"></td>
+                        {%endif%}
+                    {%endfor%}
                 </tr>
+                {%endfor%}
             </tbody>
         </table>
     </div>

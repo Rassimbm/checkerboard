@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* vertical-align: top; */
 }
 
 .container {
@@ -11,12 +12,16 @@
     flex-direction: column;
 }
 
+h1 {
+    padding: 10px;
+    margin: 10px;
+}
 
 table {
     border-collapse: collapse;
 }
 
 td {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
